@@ -52,7 +52,7 @@ const Contact = () => {
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
+              <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
                 Here to make your stunny ideas into a reality that blows the
                 mind. Get in touch now
@@ -110,7 +110,7 @@ const Contact = () => {
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}</p>
-                      <h3 className="text-xl">{item.description}</h3>
+                      <h3 className="text-[13.5px]">{item.description}</h3>
                     </div>
                   </li>
                 );
