@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { RiFileDownloadLine } from "react-icons/ri";
 
@@ -5,6 +7,7 @@ import { RiFileDownloadLine } from "react-icons/ri";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import { generateCvPdf } from "@/lib/generateCV";
 
 const Home = () => {
   return (
@@ -28,6 +31,7 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={generateCvPdf}
               >
                 <span>Download Cv</span>
                 <RiFileDownloadLine className="text-xl" />

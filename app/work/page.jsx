@@ -21,39 +21,72 @@ import Image from "next/image";
 // components
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
-const projects = [
+export const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "project 1",
+    title: "Genz Fine Dining",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sequi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+      "A fine dining resturant landing page with asymeric designs using react.js",
+    stack: [
+      { name: "React.js" },
+      { name: "Html" },
+      { name: "Css" },
+      { name: "JavaScript" },
+    ],
+    image: "/assets/work/genz_resturant.png",
+    live: "https://genzresturant.netlify.app",
+    github: "https://github.com/Marvellous-is-cool/genz-resturant",
   },
   {
     num: "02",
     category: "fullstack",
-    title: "project 2",
+    title: "Yiniz",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sequi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+      "A full fledged, comprehensive and complex website for Yiniz comprising of Blogs, Games center, commerce, e-tests, and edu center",
+    stack: [
+      { name: "NodeJs" },
+      { name: "Bootstrap" },
+      { name: "Javascript" },
+      { name: "ejs" },
+      { name: "mysql" },
+      { name: "express.js" },
+    ],
+    image: "/assets/work/yiniz.png",
+    live: "https://yiniz.com",
+    github: "https://github.com/Marvellous-is-cool/yiniz",
   },
   {
     num: "03",
     category: "frontend",
-    title: "project 3",
+    title: "GPT-3",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sequi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+      "A product showcase landing page, gpt-3, with asymeric designs using react.js",
+    stack: [
+      { name: "React.js" },
+      { name: "Html" },
+      { name: "Css" },
+      { name: "JavaScript" },
+    ],
+    image: "/assets/work/gpt3.png",
+    live: "https://exploregpt-3.netlify.app",
+    github: "https://github.com/Marvellous-is-cool/GPT-3",
+  },
+  {
+    num: "04",
+    category: "frontend",
+    title: "Coda Recuiters",
+    description:
+      "A frontend design page for recuiting members into coda company",
+    stack: [
+      { name: "React.js" },
+      { name: "Html" },
+      { name: "Css" },
+      { name: "JavaScript" },
+    ],
+    image: "/assets/work/coda_recuit.png",
+    live: "https://codarecuiters.netlify.app",
+    github: "https://github.com/Marvellous-is-cool/codarecuiters",
   },
 ];
 
@@ -94,9 +127,11 @@ const Work = () => {
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li
+                      key={index}
+                      className="text-[12px] text-accent max-w-[15ch] overflow-hidden whitespace-normal break-words"
+                    >
                       {item.name}
-                      {/* remove the last dot */}
                       {index !== project.stack.length - 1 && " . "}
                     </li>
                   );
@@ -107,7 +142,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live}>
+                <Link target="_blank" href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -120,7 +155,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project button */}
-                <Link href={project.github}>
+                <Link target="_blank" href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">

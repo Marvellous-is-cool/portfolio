@@ -19,7 +19,7 @@ const why = {
 };
 
 // about data
-const about = {
+export const about = {
   title: "About me",
   description:
     "A versatile software developer with 6 years of experience in programming, technology solutions, and non-technical fields such as graphic design, presentation design, and communication strategy deployment. Diverse skill set allows to deliver comprehensive, creative, and impactful solutions that meet both technical and business needs.",
@@ -46,7 +46,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "adebayoinioluwamarvellous1@gmail.com",
+      fieldValue: "adebayoinioluwamarv\nellous1@gmail.com",
     },
     {
       fieldName: "Freelance",
@@ -60,7 +60,7 @@ const about = {
 };
 
 // experience data
-const experience = {
+export const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
@@ -77,7 +77,7 @@ const experience = {
       duration: "2024",
     },
     {
-      company: "Alusoft Technologies Limited.",
+      company: "Alusoft Technologies",
       position: "Software Developer",
       duration: "2022 - 2023",
     },
@@ -85,14 +85,14 @@ const experience = {
 };
 
 // education data
-const education = {
+export const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
     "Comprising of various aspects ranging from code related, to non-code related fields",
   items: [
     {
-      institution: "Osun State University, Osun State",
+      institution: "Osun State University",
       degree: "Linguistics & Communication Studies",
       duration: "2021 - 2025 (estimated)",
     },
@@ -122,7 +122,7 @@ const education = {
       duration: "2018 - 2023",
     },
     {
-      institution: "The Polytechnic of Ibadan, Oyo State",
+      institution: "The Polytechnic, Ibadan",
       degree: "Mass Communication",
       duration: "2018 - 2021",
     },
@@ -135,7 +135,7 @@ const education = {
 };
 
 // skills
-const skills = {
+export const skills = {
   title: "My skills",
   description:
     "Proficient in a variety of programming languages and tools, with a focus on delivering high-quality, scalable solutions. My skill set includes full-stack development, API integration, automation, and expertise in modern web and mobile technologies",

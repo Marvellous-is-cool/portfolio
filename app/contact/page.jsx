@@ -16,7 +16,7 @@ import {
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
-const info = [
+export const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
