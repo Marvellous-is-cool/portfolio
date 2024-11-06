@@ -7,7 +7,7 @@ const socials = [
   { icon: <FaGithub />, path: "https://github.com/Marvellous-is-cool" },
   {
     icon: <FaLinkedinIn />,
-    path: "https://www.linkedin.com/in/adebayo-inioluwa-marvellous-5a3bab23a/",
+    path: "https://www.linkedin.com/in/adebayo-inioluwa-m/",
   },
   { icon: <FaDiscord />, path: "https://discord.com/GK5tbZN9" },
   { icon: <FaXTwitter />, path: "https://x.com/coolbuoi" },

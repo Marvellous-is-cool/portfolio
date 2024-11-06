@@ -38,7 +38,7 @@ export const about = {
     },
     {
       fieldName: "LinkedIn",
-      fieldValue: "adebayo-inioluwa-marvellous-5a3bab23a",
+      fieldValue: "adebayo-inioluwa-m",
     },
     {
       fieldName: "Nationality",
