@@ -75,6 +75,21 @@ export const projects = [
   {
     num: "04",
     category: "frontend",
+    title: "Lincssa Bash",
+    description: "An engrossed frontend design page for Lincssa bash event",
+    stack: [
+      { name: "React.js" },
+      { name: "Html" },
+      { name: "Css" },
+      { name: "JavaScript" },
+    ],
+    image: "/assets/work/lincssa_bash.png",
+    live: "https://lincssabash.netlify.app",
+    github: "https://github.com/Marvellous-is-cool/bash-landing",
+  },
+  {
+    num: "05",
+    category: "frontend",
     title: "Coda Recuiters",
     description:
       "A frontend design page for recuiting members into coda company",

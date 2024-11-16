@@ -242,7 +242,7 @@ const Contact = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-white/60">{item.title}</p>
-                    <h3 className="md:text-[12.5px] text-[13.5px]">
+                    <h3 className="md:text-[11px] text-[13.5px]">
                       {item.description}
                     </h3>
                   </div>
