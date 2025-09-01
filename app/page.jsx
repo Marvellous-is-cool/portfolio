@@ -22,8 +22,8 @@ const Home = () => {
               <br /> <span className="text-accent">Marvellous Adebayo</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Proficient in different frameworks, cloud deployment programming
-              languages and technologies.
+              Proficient in different frameworks, ai solutions and integrations,
+              cloud deployment programming languages and technologies.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

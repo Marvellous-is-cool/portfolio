@@ -24,6 +24,26 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 export const projects = [
   {
     num: "01",
+    category: "AI Solution",
+    title: "Imbyher.ai",
+    description:
+      "An AI-powered messaging platform that helps users schedule and send messages with emotional intelligence. Features message scheduling, AI-powered text enhancement, WhatsApp & SMS integration, and secure local storage for privacy.",
+    stack: [
+      { name: "React.js" },
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "AI/ML" },
+      { name: "WhatsApp API" },
+      { name: "SMS API" },
+    ],
+    image: "/assets/work/imbyher.jpg",
+    video: "/assets/work/videos/imbyher_demo.mp4",
+    hasVideo: true,
+    live: "https://imbyher.ai",
+    github: "https://github.com/Marvellous-is-cool",
+  },
+  {
+    num: "02",
     category: "frontend",
     title: "Genz Fine Dining",
     description:
@@ -35,6 +55,8 @@ export const projects = [
       { name: "JavaScript" },
     ],
     image: "/assets/work/genz_resturant.png",
+    video: "/assets/work/videos/genz_demo.mp4", // Add video path
+    hasVideo: true, // Flag to show if video is available
     live: "https://genzresturant.netlify.app",
     github: "https://github.com/Marvellous-is-cool/genz-resturant",
   },
@@ -53,6 +75,8 @@ export const projects = [
       { name: "express.js" },
     ],
     image: "/assets/work/yiniz.png",
+    video: "/assets/work/videos/yiniz_demo.mp4",
+    hasVideo: true,
     live: "https://yiniz.com",
     github: "https://github.com/Marvellous-is-cool/yiniz",
   },
@@ -69,6 +93,7 @@ export const projects = [
       { name: "JavaScript" },
     ],
     image: "/assets/work/gpt3.png",
+    hasVideo: false, // No video available for this project
     live: "https://exploregpt-3.netlify.app",
     github: "https://github.com/Marvellous-is-cool/GPT-3",
   },
@@ -84,6 +109,7 @@ export const projects = [
       { name: "JavaScript" },
     ],
     image: "/assets/work/lincssa_bash.png",
+    hasVideo: false,
     live: "https://lincssabash.netlify.app",
     github: "https://github.com/Marvellous-is-cool/bash-landing",
   },
@@ -100,6 +126,8 @@ export const projects = [
       { name: "JavaScript" },
     ],
     image: "/assets/work/coda_recuit.png",
+    video: "/assets/work/videos/coda_demo.mp4",
+    hasVideo: true,
     live: "https://codarecuiters.netlify.app",
     github: "https://github.com/Marvellous-is-cool/codarecuiters",
   },
@@ -107,12 +135,15 @@ export const projects = [
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
+  const [showVideo, setShowVideo] = useState(false);
 
   const handleSlideChange = (swiper) => {
     // get current slide index
     const currentIndex = swiper.activeIndex;
     // update project state based on current slide index
     setProject(projects[currentIndex]);
+    // Reset to image view when changing projects
+    setShowVideo(false);
   };
 
   return (
@@ -186,9 +217,54 @@ const Work = () => {
             </div>
           </div>
           <div className="w-full xl:w-[50%]">
+            {/* Video/Image Toggle - Only show if project has video */}
+            {project.hasVideo && (
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <span
+                  className={`text-sm ${
+                    !showVideo ? "text-accent" : "text-white/60"
+                  } transition-colors duration-300`}
+                >
+                  Showcase
+                </span>
+                <div className="relative">
+                  <input
+                    type="checkbox"
+                    id="video-toggle"
+                    className="sr-only"
+                    checked={showVideo}
+                    onChange={() => setShowVideo(!showVideo)}
+                  />
+                  <label
+                    htmlFor="video-toggle"
+                    className="flex items-center cursor-pointer"
+                  >
+                    <div
+                      className={`relative w-14 h-7 rounded-full transition-colors duration-300 ${
+                        showVideo ? "bg-accent" : "bg-white/20"
+                      }`}
+                    >
+                      <div
+                        className={`absolute top-0.5 left-0.5 w-6 h-6 bg-white rounded-full transition-transform duration-300 ${
+                          showVideo ? "translate-x-7" : ""
+                        }`}
+                      ></div>
+                    </div>
+                  </label>
+                </div>
+                <span
+                  className={`text-sm ${
+                    showVideo ? "text-accent" : "text-white/60"
+                  } transition-colors duration-300`}
+                >
+                  Video Demo
+                </span>
+              </div>
+            )}
+
             <Swiper
               spaceBetween={30}
-              slidePerView={1}
+              slidesPerView={1}
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
@@ -198,14 +274,29 @@ const Work = () => {
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                       {/* overlay */}
                       <div className="absolute top-0 button-0 w-full h-full bg-black/10 z-10"></div>
-                      {/* image  */}
+
+                      {/* Video or Image based on toggle */}
                       <div className="relative w-full h-full">
-                        <Image
-                          src={project.image}
-                          fill
-                          className="object-cover"
-                          alt=""
-                        />
+                        {showVideo && project.hasVideo ? (
+                          <video
+                            className="w-full h-full object-cover"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            preload="metadata"
+                          >
+                            <source src={project.video} type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        ) : (
+                          <Image
+                            src={project.image}
+                            fill
+                            className="object-cover"
+                            alt={project.title}
+                          />
+                        )}
                       </div>
                     </div>
                   </SwiperSlide>

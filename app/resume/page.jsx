@@ -7,9 +7,29 @@ import {
   FaReact,
   FaNodeJs,
   FaFilePowerpoint,
+  FaPython,
+  FaPlug,
+  FaBrain,
+  FaFlask,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs, SiMysql } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiMysql,
+  SiFirebase,
+  SiMongodb,
+  SiAngular,
+  SiDart,
+  SiFlutter,
+  SiC,
+  SiCplusplus,
+  SiLua,
+  SiFastapi,
+  SiSolidity,
+} from "react-icons/si";
+
+import { TbBrandReactNative } from "react-icons/tb";
 
 // why data
 const why = {
@@ -67,7 +87,12 @@ export const experience = {
     "Delivered a wide range of projects, from web and mobile applications to API integrations and automation solutions. Expertise spans across multiple programming languages and technologies, of efficient, scalable, and user-centric solutions.",
   items: [
     {
-      company: "Tini Technologies Limited.",
+      company: "Mico Technologies",
+      position: "Intern - Software Developer",
+      duration: "2025 - Present",
+    },
+    {
+      company: "Tini Technologies (freelancing brand)",
       position: "Founder/Software Developer",
       duration: "2024 - Present",
     },
@@ -93,8 +118,8 @@ export const education = {
   items: [
     {
       institution: "Osun State University",
-      degree: "Linguistics & Communication Studies",
-      duration: "2021 - 2025 (estimated)",
+      degree: "B.A. Linguistics & Communication Studies (AI Integration)",
+      duration: "2021 - 2025",
     },
     {
       institution: "Online Course",
@@ -153,8 +178,56 @@ export const skills = {
       name: "JavaScript",
     },
     {
+      icon: <SiAngular />,
+      name: "AngularJs",
+    },
+    {
+      icon: <FaJs />,
+      name: "Ajax",
+    },
+    {
+      icon: <SiSolidity />,
+      name: "Solidity",
+    },
+    {
       icon: <FaReact />,
       name: "react.js",
+    },
+    {
+      icon: <FaPython />,
+      name: "python",
+    },
+    {
+      icon: <FaFlask />,
+      name: "flask",
+    },
+    {
+      icon: <TbBrandReactNative />,
+      name: "react native",
+    },
+    {
+      icon: <SiFlutter />,
+      name: "flutter",
+    },
+    {
+      icon: <SiDart />,
+      name: "dart",
+    },
+    {
+      icon: <SiC />,
+      name: "c",
+    },
+    {
+      icon: <SiCplusplus />,
+      name: "c++",
+    },
+    {
+      icon: <SiLua />,
+      name: "lua",
+    },
+    {
+      icon: <SiFastapi />,
+      name: "fastAPI",
     },
     {
       icon: <SiNextdotjs />,
@@ -169,8 +242,24 @@ export const skills = {
       name: "MySql",
     },
     {
+      icon: <SiFirebase />,
+      name: "Firebase",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+    {
       icon: <FaNodeJs />,
       name: "Node.js",
+    },
+    {
+      icon: <FaPlug />,
+      name: "APIs",
+    },
+    {
+      icon: <FaBrain />,
+      name: "AI Integration",
     },
     {
       icon: <FaFilePowerpoint />,
@@ -190,6 +279,8 @@ import {
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+import { FaC } from "react-icons/fa6";
+import LinkedInBadge from "@/components/LinkedInBadge";
 
 const Resume = () => {
   return (
@@ -356,6 +447,17 @@ const Resume = () => {
                 <p className="map-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
+
+                {/* LinkedIn Badge */}
+                <div className="flex justify-center xl:justify-start">
+                  <LinkedInBadge
+                    theme="dark"
+                    size="medium"
+                    showIcon={false}
+                    className="bg-[#232329] p-4 rounded-xl"
+                  />
+                </div>
+
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (

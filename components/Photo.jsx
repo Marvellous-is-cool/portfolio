@@ -21,16 +21,20 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
+          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
-          <Image
-            src="/assets/photo.png"
-            priority
-            quality={100}
-            fill
-            alt=""
-            className="object-contain"
-          />
+          <div className="relative w-full h-full rounded-full overflow-hidden">
+            <Image
+              src="/assets/photo.png"
+              priority
+              quality={100}
+              fill
+              alt="Marvellous Adebayo"
+              className="object-cover object-center scale-110 hover:scale-115 transition-transform duration-500 ease-out"
+            />
+            {/* Professional overlay gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-accent/10 via-transparent to-transparent"></div>
+          </div>
         </motion.div>
 
         {/* circle */}

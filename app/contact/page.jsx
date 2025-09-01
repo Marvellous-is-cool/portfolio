@@ -195,25 +195,28 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
+                    <SelectItem value="AI Solutions Software">
+                      AI Solutions Software
+                    </SelectItem>
                     <SelectItem value="Web Development">
                       Web Development
                     </SelectItem>
-                    <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
-                    <SelectItem value="Bots Development/Management">
-                      Bots Development/Management
-                    </SelectItem>
-                    <SelectItem value="Graphics Design">
-                      Graphics Design
+                    <SelectItem value="Mobile App Development">
+                      Mobile App Development
                     </SelectItem>
                     <SelectItem value="Automation / Python Scripting">
                       Automation / Python Scripting
                     </SelectItem>
-                    <SelectItem value="SEO">SEO</SelectItem>
-                    <SelectItem value="Mobile App Development">
-                      Mobile App Development
+                    <SelectItem value="Bots Development/Management">
+                      Bots Development/Management
                     </SelectItem>
+                    <SelectItem value="SEO">SEO</SelectItem>
                     <SelectItem value="API Integration">
                       API Integration
+                    </SelectItem>
+                    <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
+                    <SelectItem value="Graphics Design">
+                      Graphics Design
                     </SelectItem>
                     <SelectItem value="Presentation Design">
                       Presentation Design
