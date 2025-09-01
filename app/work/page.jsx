@@ -21,7 +21,7 @@ import Image from "next/image";
 // components
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
-export const projects = [
+const projects = [
   {
     num: "01",
     category: "AI Solution",
@@ -82,6 +82,26 @@ export const projects = [
   },
   {
     num: "04",
+    category: "FullStack",
+    title: "ASF Votes",
+    description:
+      "A full stack website for a fellowship infusion with a landing page and a full fledged voting system for a vest to celebrate their anniversary, featuring user authentication, real-time voting, and a dynamic results dashboard, integrated with Paystack and Firebase for storing data.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Firebase" },
+      { name: "Paystack API" },
+      { name: "CSS3" },
+      { name: "JavaScript" },
+      { name: "Authentication" },
+    ],
+    image: "/assets/work/asf_votes.jpg",
+    video: "/assets/work/videos/asf_demo.mp4",
+    hasVideo: true,
+    live: "https://asfvotes.vercel.app",
+    github: "https://github.com/Marvellous-is-cool/asf-votes",
+  },
+  {
+    num: "05",
     category: "Fullstack",
     title: "Yiniz",
     description:
@@ -101,7 +121,7 @@ export const projects = [
     github: "https://github.com/Marvellous-is-cool/yiniz",
   },
   {
-    num: "05",
+    num: "06",
     category: "Frontend",
     title: "GPT-3 Showcase",
     description:
@@ -118,7 +138,7 @@ export const projects = [
     github: "https://github.com/Marvellous-is-cool/GPT-3",
   },
   {
-    num: "06",
+    num: "07",
     category: "Frontend",
     title: "Lincssa Bash",
     description:
@@ -135,7 +155,7 @@ export const projects = [
     github: "https://github.com/Marvellous-is-cool/bash-landing",
   },
   {
-    num: "07",
+    num: "08",
     category: "Frontend",
     title: "Coda Recruiters",
     description:
