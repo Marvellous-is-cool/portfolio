@@ -268,6 +268,45 @@ export const skills = {
   ],
 };
 
+// achievements data
+export const achievements = {
+  title: "Achievements",
+  description:
+    "Notable accomplishments and milestones achieved throughout my career in software development, technology solutions, and professional growth.",
+  items: [
+    {
+      achievement:
+        "Completed final year project on 'AI powered E-test' with excellent grade",
+      date: "2025",
+    },
+    {
+      achievement:
+        "Founded Tini Technologies - Freelancing brand serving multiple clients",
+      date: "2024",
+    },
+    {
+      achievement:
+        "Developed multiple educational technologies during presidency of the departmental association",
+      date: "2023-2024",
+    },
+    {
+      achievement:
+        "Led software development team at Yiniz - Multi-platform web application",
+      date: "2024",
+    },
+    {
+      achievement:
+        "Certified Software Developer at Alusoft Technologies Limited",
+      date: "2022-2023",
+    },
+    {
+      achievement:
+        "Led Project at Alusoft Technologies to develop a comprehensive school management system",
+      date: "2023",
+    },
+  ],
+};
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import {
@@ -308,6 +347,7 @@ const Resume = () => {
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="achievements">Achievements</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
 
@@ -471,6 +511,45 @@ const Resume = () => {
                     );
                   })}
                 </ul>
+              </motion.div>
+            </TabsContent>
+
+            {/* achievements */}
+            <TabsContent
+              value="achievements"
+              className="w-full text-center xl:text-left"
+            >
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { delay: 0.2, duration: 0.4, ease: "easeIn" },
+                }}
+                className="flex flex-col gap-[30px]"
+              >
+                <h3 className="text-4xl font-bold">{achievements.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {achievements.description}
+                </p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {achievements.items.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="bg-[#232329] py-6 px-8 rounded-xl flex flex-col justify-center items-center lg:items-start gap-3 min-h-[140px]"
+                        >
+                          <span className="text-accent font-semibold">
+                            {item.date}
+                          </span>
+                          <p className="text-white text-sm leading-relaxed text-center lg:text-left">
+                            {item.achievement}
+                          </p>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </motion.div>
             </TabsContent>
           </div>

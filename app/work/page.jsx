@@ -21,7 +21,7 @@ import Image from "next/image";
 // components
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
-const projects = [
+export const projects = [
   {
     num: "01",
     category: "AI Solution",
@@ -102,6 +102,25 @@ const projects = [
   },
   {
     num: "05",
+    category: "Frontend",
+    title: "Or-bitnet",
+    description:
+      "A stunning landing page for Or-bitnet, a company specializing in powering network solutions for businesses using both wired and non-wired connections, leveraging Starlink technology. Built with Next.js 13+ and TypeScript, featuring beautiful UI with Tailwind CSS, smooth animations with Framer Motion, fully responsive design, and SEO optimization.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "Framer Motion" },
+      { name: "JavaScript" },
+    ],
+    image: "/assets/work/orbitnet.jpg",
+    video: "/assets/work/videos/orbitnet_demo.mp4",
+    hasVideo: false,
+    live: "https://orbitnet.com",
+    github: "https://github.com/Marvellous-is-cool/orbitnet",
+  },
+  {
+    num: "06",
     category: "Fullstack",
     title: "Yiniz",
     description:
@@ -121,7 +140,7 @@ const projects = [
     github: "https://github.com/Marvellous-is-cool/yiniz",
   },
   {
-    num: "06",
+    num: "07",
     category: "Frontend",
     title: "GPT-3 Showcase",
     description:
@@ -138,7 +157,7 @@ const projects = [
     github: "https://github.com/Marvellous-is-cool/GPT-3",
   },
   {
-    num: "07",
+    num: "08",
     category: "Frontend",
     title: "Lincssa Bash",
     description:
@@ -155,7 +174,7 @@ const projects = [
     github: "https://github.com/Marvellous-is-cool/bash-landing",
   },
   {
-    num: "08",
+    num: "09",
     category: "Frontend",
     title: "Coda Recruiters",
     description:
