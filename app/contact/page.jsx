@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; // Updated import
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -37,8 +36,7 @@ export const info = [
   },
 ];
 
-const Contact = () => {
-  const router = useRouter(); // Get router instance
+const ContactForm = () => {
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -52,14 +50,15 @@ const Contact = () => {
   const [isVisible, setIsVisible] = useState(false); // State for notification visibility
 
   useEffect(() => {
-    const service = router.query?.service; // Access query parameters from router
+    const params = new URLSearchParams(window.location.search);
+    const service = params.get("service");
     if (service) {
       setFormData((prevFormData) => ({
         ...prevFormData,
         service,
       }));
     }
-  }, [router]);
+  }, []);
 
   useEffect(() => {
     if (status) {
@@ -196,31 +195,17 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="AI Solutions Software">
-                      AI Solutions Software
+                    <SelectItem value="Backend API Development">
+                      Backend API Development
                     </SelectItem>
-                    <SelectItem value="Web Development">
-                      Web Development
+                    <SelectItem value="AI & NLP Systems">
+                      AI & NLP Systems
                     </SelectItem>
-                    <SelectItem value="Mobile App Development">
-                      Mobile App Development
+                    <SelectItem value="Automation & Bot Development">
+                      Automation & Bot Development
                     </SelectItem>
-                    <SelectItem value="Automation / Python Scripting">
-                      Automation / Python Scripting
-                    </SelectItem>
-                    <SelectItem value="Bots Development/Management">
-                      Bots Development/Management
-                    </SelectItem>
-                    <SelectItem value="SEO">SEO</SelectItem>
-                    <SelectItem value="API Integration">
-                      API Integration
-                    </SelectItem>
-                    <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
-                    <SelectItem value="Graphics Design">
-                      Graphics Design
-                    </SelectItem>
-                    <SelectItem value="Presentation Design">
-                      Presentation Design
+                    <SelectItem value="Cloud Infrastructure & DevOps">
+                      Cloud Infrastructure & DevOps
                     </SelectItem>
                   </SelectGroup>
                 </SelectContent>
@@ -260,4 +245,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

@@ -8,15 +8,15 @@ const stats = [
     text: "Years of experience",
   },
   {
-    num: 25,
+    num: 15,
     text: "Projects Completed",
   },
   {
-    num: 13,
+    num: 20,
     text: "Technologies mastered",
   },
   {
-    num: 555,
+    num: 500,
     text: "Code commits",
   },
 ];
@@ -41,7 +41,7 @@ const Stats = () => {
                 <p
                   className={`${
                     item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
-                  } lead ing-snug text-white/80`}
+                  } leading-snug text-white/80`}
                 >
                   {item.text}
                 </p>

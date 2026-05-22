@@ -18,178 +18,172 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
-// components
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 export const projects = [
   {
     num: "01",
-    category: "AI Solution",
-    title: "Imbyher.ai",
+    category: "AI / NLP",
+    title: "yoobaai",
     description:
-      "An AI-powered messaging platform that helps users schedule and send messages with emotional intelligence. Features message scheduling, AI-powered text enhancement, WhatsApp & SMS integration, and secure local storage for privacy.",
+      "A tone-aware Yorùbá NLP toolkit for text preprocessing, tokenization, normalization, and low-resource language AI research. Implements readability scoring, sentiment analysis, linguistic complexity measurement, and vocabulary diversity assessment for Yorùbá text.",
     stack: [
-      { name: "React.js" },
-      { name: "Next.js" },
-      { name: "TypeScript" },
-      { name: "AI/ML" },
+      { name: "Python" },
+      { name: "NLP" },
+      { name: "Tokenization" },
+      { name: "Linguistics" },
+      { name: "AI Research" },
+    ],
+    image: "/assets/work/yoobaai.jpg",
+    hasVideo: false,
+    live: "https://github.com/Marvellous-is-cool/yoobaai",
+    github: "https://github.com/Marvellous-is-cool/yoobaai",
+  },
+  {
+    num: "02",
+    category: "Backend / AI",
+    title: "Imbyher API",
+    description:
+      "Scalable AI-powered messaging backend for high-volume WhatsApp and SMS automation. Built with FastAPI featuring asynchronous task orchestration, Redis-backed rate limiting, secure RBAC, AI inference integration, and payment processing.",
+    stack: [
+      { name: "FastAPI" },
+      { name: "Python" },
+      { name: "Redis" },
+      { name: "Celery" },
       { name: "WhatsApp API" },
       { name: "SMS API" },
     ],
     image: "/assets/work/imbyher.jpg",
-    video: "/assets/work/videos/imbyher_demo.mp4",
-    hasVideo: true,
+    hasVideo: false,
     live: "https://imbyher.ai",
-    github: "https://github.com/Marvellous-is-cool",
-  },
-  {
-    num: "02",
-    category: "Fullstack",
-    title: "Fyblincssa",
-    description:
-      "A comprehensive NextJS application designed for final year university students. Features student registration, activity management, and personalized student ID card generation with multiple design variants. Built with Firebase for robust data management.",
-    stack: [
-      { name: "Next.js" },
-      { name: "React.js" },
-      { name: "Firebase" },
-      { name: "TypeScript" },
-      { name: "Tailwind CSS" },
-    ],
-    image: "/assets/work/fyblincssa.jpg",
-    video: "/assets/work/videos/fyblincssa_demo.mp4",
-    hasVideo: true,
-    live: "https://fyblincssa.vercel.app",
-    github: "https://github.com/Marvellous-is-cool/fyblincssa",
+    github: "https://github.com/Marvellous-is-cool/imbyherapi",
   },
   {
     num: "03",
-    category: "Frontend",
-    title: "Genz Fine Dining",
+    category: "Fullstack",
+    title: "lodgeinternet",
     description:
-      "An elegant fine dining restaurant landing page featuring asymmetric modern designs and smooth animations. Built with React.js to showcase culinary excellence through compelling visual storytelling.",
-    stack: [
-      { name: "React.js" },
-      { name: "CSS3" },
-      { name: "JavaScript" },
-      { name: "HTML5" },
-      { name: "Framer Motion" },
-    ],
-    image: "/assets/work/genz_restaurant.png",
-    video: "/assets/work/videos/genz_demo.mp4",
-    hasVideo: false,
-    live: "https://genzrestaurant.netlify.app",
-    github: "https://github.com/Marvellous-is-cool/genz-restaurant",
-  },
-  {
-    num: "04",
-    category: "FullStack",
-    title: "ASF Votes",
-    description:
-      "A full stack website for a fellowship infusion with a landing page and a full fledged voting system for a vest to celebrate their anniversary, featuring user authentication, real-time voting, and a dynamic results dashboard, integrated with Paystack and Firebase for storing data.",
-    stack: [
-      { name: "Next.js" },
-      { name: "Firebase" },
-      { name: "Paystack API" },
-      { name: "CSS3" },
-      { name: "JavaScript" },
-      { name: "Authentication" },
-    ],
-    image: "/assets/work/asf_votes.jpg",
-    video: "/assets/work/videos/asf_demo.mp4",
-    hasVideo: true,
-    live: "https://asfvotes.vercel.app",
-    github: "https://github.com/Marvellous-is-cool/asf-votes",
-  },
-  {
-    num: "05",
-    category: "Frontend",
-    title: "Or-bitnet",
-    description:
-      "A stunning landing page for Or-bitnet, a company specializing in powering network solutions for businesses using both wired and non-wired connections, leveraging Starlink technology. Built with Next.js 13+ and TypeScript, featuring beautiful UI with Tailwind CSS, smooth animations with Framer Motion, fully responsive design, and SEO optimization.",
+      "A full-stack hostel internet and TV subscription management platform built with Next.js 14. Features Firebase Admin SDK, Redis caching, rate limiting, authentication, email services, and an admin dashboard. Live with 55+ users across 3 hostels.",
     stack: [
       { name: "Next.js" },
       { name: "TypeScript" },
+      { name: "Firebase" },
+      { name: "Redis" },
       { name: "Tailwind CSS" },
-      { name: "Framer Motion" },
-      { name: "JavaScript" },
     ],
-    image: "/assets/work/orbitnet.jpg",
-    video: "/assets/work/videos/orbitnet_demo.mp4",
+    image: "/assets/work/lodgeinternet.jpg",
     hasVideo: false,
-    live: "https://orbitnet.com",
-    github: "https://github.com/Marvellous-is-cool/orbitnet",
+    live: "https://lodgeinternet.com",
+    github: "https://github.com/thedevcool/lodgeinternet",
   },
   {
-    num: "06",
-    category: "Fullstack",
-    title: "Yiniz",
+    num: "04",
+    category: "Fullstack + ML",
+    title: "Yiniz + YinizAI",
     description:
-      "A comprehensive multi-purpose platform featuring blogs, gaming center, e-commerce, educational testing system, and learning hub. Built with Node.js and MySQL for scalable performance.",
+      "A comprehensive multi-purpose platform featuring blogs, e-commerce, and educational testing system with an integrated ML microservice. YinizAI uses Random Forest models for question difficulty prediction, answer scoring, and comprehension clustering. Final year project — scored an A.",
     stack: [
       { name: "Node.js" },
       { name: "Express.js" },
       { name: "MySQL" },
-      { name: "EJS" },
-      { name: "Bootstrap" },
-      { name: "JavaScript" },
+      { name: "FastAPI" },
+      { name: "Python" },
+      { name: "Scikit-learn" },
     ],
     image: "/assets/work/yiniz.png",
-    video: "/assets/work/videos/yiniz_demo.mp4",
     hasVideo: false,
     live: "https://yiniz.com",
     github: "https://github.com/Marvellous-is-cool/yiniz",
   },
   {
-    num: "07",
-    category: "Frontend",
-    title: "GPT-3 Showcase",
+    num: "05",
+    category: "Backend",
+    title: "transdom",
     description:
-      "A modern product showcase landing page for GPT-3 technology, featuring asymmetric design elements and interactive components built with React.js.",
+      "A full-stack logistics platform with a FastAPI + MongoDB backend for shipping rates and pricing, and a Next.js/TypeScript frontend. Features authentication, email service, shipping zone analysis tools, and RESTful endpoints. Live at transdomlogistics.com.",
     stack: [
-      { name: "React.js" },
-      { name: "CSS3" },
-      { name: "JavaScript" },
-      { name: "HTML5" },
+      { name: "FastAPI" },
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "MongoDB" },
+      { name: "Auth" },
+      { name: "REST API" },
     ],
-    image: "/assets/work/gpt3.png",
+    image: "/assets/work/transdom.jpg",
     hasVideo: false,
-    live: "https://exploregpt-3.netlify.app",
-    github: "https://github.com/Marvellous-is-cool/GPT-3",
+    live: "https://transdomlogistics.com",
+    github: "https://github.com/Marvellous-is-cool/transdom",
+  },
+  {
+    num: "06",
+    category: "Fullstack",
+    title: "ASF Votes",
+    description:
+      "A full-stack voting system with user authentication, real-time voting, dynamic results dashboard, and Paystack payment integration for seamless transactions.",
+    stack: [
+      { name: "Next.js" },
+      { name: "Firebase" },
+      { name: "Paystack API" },
+      { name: "Auth" },
+      { name: "JavaScript" },
+    ],
+    image: "/assets/work/asf_votes.jpg",
+    hasVideo: false,
+    live: "https://asf-ikire.vercel.app",
+    github: "https://github.com/Marvellous-is-cool/asfikire",
+  },
+  {
+    num: "07",
+    category: "Fullstack",
+    title: "paytrack",
+    description:
+      "A payment tracking application built for client project management. Features program management, payment tracking, and administrative controls.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "JavaScript" },
+      { name: "Tailwind CSS" },
+    ],
+    image: "/assets/work/paytrack.jpg",
+    hasVideo: false,
+    live: "https://paytrackbytini.vercel.app",
+    github: "https://github.com/thedevcool/paytrack",
   },
   {
     num: "08",
-    category: "Frontend",
-    title: "Lincssa Bash",
+    category: "Fullstack",
+    title: "Fyblincssa",
     description:
-      "An immersive event landing page for the Lincssa Bash celebration, featuring dynamic animations and responsive design to capture the excitement of the event.",
+      "A comprehensive Next.js application for final year university students. Features student registration, activity management, and personalized student ID card generation with multiple design variants.",
     stack: [
-      { name: "React.js" },
-      { name: "CSS3" },
-      { name: "JavaScript" },
-      { name: "HTML5" },
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "Firebase" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
     ],
-    image: "/assets/work/lincssa_bash.png",
+    image: "/assets/work/fyblincssa.jpg",
     hasVideo: false,
-    live: "https://lincssabash.netlify.app",
-    github: "https://github.com/Marvellous-is-cool/bash-landing",
+    live: "https://fyblinc.vercel.app",
+    github: "https://github.com/Marvellous-is-cool/fyblincssa",
   },
   {
     num: "09",
-    category: "Frontend",
-    title: "Coda Recruiters",
+    category: "Automation",
+    title: "Bots Suite",
     description:
-      "A professional recruitment landing page designed to attract top talent to Coda company. Features modern UI/UX design with interactive elements and responsive layouts.",
+      "A collection of production-grade Python bots built for various platforms including WhatsApp, Telegram, Discord, and web automation. Covers chatbots, trading bots, scrapers, and task automation — demonstrating versatile backend automation engineering.",
     stack: [
-      { name: "React.js" },
-      { name: "CSS3" },
-      { name: "JavaScript" },
-      { name: "HTML5" },
+      { name: "Python" },
+      { name: "Automation" },
+      { name: "APIs" },
+      { name: "Webhooks" },
+      { name: "Async" },
     ],
-    image: "/assets/work/coda_recruit.png",
-    video: "/assets/work/videos/coda_demo.mp4",
+    image: "/assets/work/bots_suite.jpg",
     hasVideo: false,
-    live: "https://codarecruiters.netlify.app",
-    github: "https://github.com/Marvellous-is-cool/codarecruiters",
+    live: "",
+    github: "https://github.com/Marvellous-is-cool?tab=repositories&q=bot",
   },
 ];
 
@@ -198,11 +192,8 @@ const Work = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   const handleSlideChange = (swiper) => {
-    // get current slide index
     const currentIndex = swiper.activeIndex;
-    // update project state based on current slide index
     setProject(projects[currentIndex]);
-    // Reset to image view when changing projects
     setShowVideo(false);
   };
 
@@ -219,17 +210,13 @@ const Work = () => {
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl: justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
-              {/* outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              {/* project category */}
-              <h2 className="text-[42px] font-bold    leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                {project.title}
               </h2>
-              {/* project description */}
               <p className="text-white/60">{project.description}</p>
-              {/* stack */}
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
@@ -243,11 +230,9 @@ const Work = () => {
                   );
                 })}
               </ul>
-              {/* border */}
               <div className="border border-white/20"></div>
-              {/* buttons */}
               <div className="flex items-center gap-4">
-                {/* live project button */}
+                {project.live && (
                 <Link target="_blank" href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -260,7 +245,8 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                {/* github project button */}
+                )}
+                {project.github && (
                 <Link target="_blank" href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
@@ -273,11 +259,11 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+                )}
               </div>
             </div>
           </div>
           <div className="w-full xl:w-[50%]">
-            {/* Video/Image Toggle - Only show if project has video */}
             {project.hasVideo && (
               <div className="flex items-center justify-center gap-4 mb-4">
                 <span
@@ -332,10 +318,8 @@ const Work = () => {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                      {/* overlay */}
                       <div className="absolute top-0 button-0 w-full h-full bg-black/10 z-10"></div>
 
-                      {/* Video or Image based on toggle */}
                       <div className="relative w-full h-full">
                         {showVideo && project.hasVideo ? (
                           <video
@@ -362,7 +346,6 @@ const Work = () => {
                   </SwiperSlide>
                 );
               })}
-              {/* slider buttons */}
               <WorkSliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"

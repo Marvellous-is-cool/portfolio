@@ -1,16 +1,15 @@
 "use client";
 
 import {
-  FaHtml5,
-  FaCss3,
   FaJs,
   FaReact,
   FaNodeJs,
-  FaFilePowerpoint,
   FaPython,
   FaPlug,
   FaBrain,
   FaFlask,
+  FaDocker,
+  FaAws,
 } from "react-icons/fa";
 
 import {
@@ -19,34 +18,28 @@ import {
   SiMysql,
   SiFirebase,
   SiMongodb,
-  SiAngular,
-  SiDart,
-  SiFlutter,
-  SiC,
-  SiCplusplus,
-  SiLua,
   SiFastapi,
-  SiSolidity,
+  SiPostgresql,
+  SiCelery,
+  SiStripe,
 } from "react-icons/si";
-
-import { TbBrandReactNative } from "react-icons/tb";
 
 // why data
 const why = {
   title: "Why hire me",
   description:
-    "Leveraging my expertise in technology and professionalism, I create innovative solutions that merge technological skills with creative insight, delivering exceptional results that align with business objectives and propel success.",
+    "I build backend systems that are scalable, secure, and production-ready. With deep expertise in Python, FastAPI, distributed architectures, and AI/NLP, I deliver solutions that go beyond requirements — clean APIs, reliable payment flows, and intelligent automation.",
 };
 
 // about data
 export const about = {
   title: "About me",
   description:
-    "A versatile software developer with 6 years of experience in programming, technology solutions, and non-technical fields such as graphic design, presentation design, and communication strategy deployment. Diverse skill set allows to deliver comprehensive, creative, and impactful solutions that meet both technical and business needs.",
+    "A backend-focused software engineer with 6 years of experience in Python, Node.js, and cloud-native development. Skilled in designing distributed systems, RESTful APIs, payment integrations, and AI-powered backends. Background in computational linguistics adds a unique depth to NLP and language technology projects.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Marvellous Adebayo",
+      fieldValue: "Inioluwa Adebayo",
     },
     {
       fieldName: "Phone",
@@ -84,7 +77,7 @@ export const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Delivered a wide range of projects, from web and mobile applications to API integrations and automation solutions. Expertise spans across multiple programming languages and technologies, of efficient, scalable, and user-centric solutions.",
+    "Designed and shipped production-grade backend systems, RESTful APIs, and AI-integrated platforms. Experience spans fintech, education, logistics, and communication — delivering scalable, well-architected solutions end-to-end.",
   items: [
     {
       company: "Mico Technologies",
@@ -114,17 +107,12 @@ export const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Comprising of various aspects ranging from code related, to non-code related fields",
+    "Academic background spanning computational linguistics and software engineering",
   items: [
     {
       institution: "Osun State University",
-      degree: "B.A. Linguistics & Communication Studies (AI Integration)",
+      degree: "B.A. Linguistics & Communication Studies (Computational Linguistics)",
       duration: "2021 - 2025",
-    },
-    {
-      institution: "Online Course",
-      degree: " Programming Course",
-      duration: "2023 - 2024",
     },
     {
       institution: "Alusoft Technologies Limited",
@@ -135,16 +123,6 @@ export const education = {
       institution: "Udemy",
       degree: "Complete Javascript Course",
       duration: "2022",
-    },
-    {
-      institution: "Sololearn",
-      degree: "Coding For Marketers",
-      duration: "2021",
-    },
-    {
-      institution: "Sololearn",
-      degree: "Full Stack Web Development",
-      duration: "2018 - 2023",
     },
     {
       institution: "The Polytechnic, Ibadan",
@@ -163,107 +141,79 @@ export const education = {
 export const skills = {
   title: "My skills",
   description:
-    "Proficient in a variety of programming languages and tools, with a focus on delivering high-quality, scalable solutions. My skill set includes full-stack development, API integration, automation, and expertise in modern web and mobile technologies",
+    "Core expertise in backend engineering, distributed systems, API design, and AI/NLP. Proficient in Python, FastAPI, Node.js, and cloud-native technologies.",
   skillList: [
     {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3",
+      icon: <FaPython />,
+      name: "Python",
     },
     {
       icon: <FaJs />,
       name: "JavaScript",
     },
     {
-      icon: <SiAngular />,
-      name: "AngularJs",
-    },
-    {
-      icon: <FaJs />,
-      name: "Ajax",
-    },
-    {
-      icon: <SiSolidity />,
-      name: "Solidity",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <FaPython />,
-      name: "python",
-    },
-    {
-      icon: <FaFlask />,
-      name: "flask",
-    },
-    {
-      icon: <TbBrandReactNative />,
-      name: "react native",
-    },
-    {
-      icon: <SiFlutter />,
-      name: "flutter",
-    },
-    {
-      icon: <SiDart />,
-      name: "dart",
-    },
-    {
-      icon: <SiC />,
-      name: "c",
-    },
-    {
-      icon: <SiCplusplus />,
-      name: "c++",
-    },
-    {
-      icon: <SiLua />,
-      name: "lua",
+      icon: <SiNextdotjs />,
+      name: "TypeScript",
     },
     {
       icon: <SiFastapi />,
-      name: "fastAPI",
+      name: "FastAPI",
     },
     {
-      icon: <SiNextdotjs />,
-      name: "next.js",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css",
-    },
-    {
-      icon: <SiMysql />,
-      name: "MySql",
-    },
-    {
-      icon: <SiFirebase />,
-      name: "Firebase",
-    },
-    {
-      icon: <SiMongodb />,
-      name: "MongoDB",
+      icon: <FaFlask />,
+      name: "Django",
     },
     {
       icon: <FaNodeJs />,
       name: "Node.js",
     },
     {
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+    {
+      icon: <SiMysql />,
+      name: "MySQL",
+    },
+    {
+      icon: <FaReact />,
+      name: "Redis",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "Firebase",
+    },
+    {
       icon: <FaPlug />,
-      name: "APIs",
+      name: "REST APIs",
     },
     {
       icon: <FaBrain />,
-      name: "AI Integration",
+      name: "AI / NLP",
     },
     {
-      icon: <FaFilePowerpoint />,
-      name: "PowerPoint Presentation",
+      icon: <SiCelery />,
+      name: "Celery",
+    },
+    {
+      icon: <FaDocker />,
+      name: "Docker",
+    },
+    {
+      icon: <FaAws />,
+      name: "AWS",
+    },
+    {
+      icon: <SiStripe />,
+      name: "Stripe",
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "Paystack",
     },
   ],
 };
@@ -276,22 +226,27 @@ export const achievements = {
   items: [
     {
       achievement:
-        "Completed final year project on 'AI powered E-test' with excellent grade",
+        "Developed yoobaai — a tone-aware Yoruba NLP toolkit for low-resource language AI research",
       date: "2025",
     },
     {
       achievement:
-        "Founded Tini Technologies - Freelancing brand serving multiple clients",
+        "Completed final year project on ML-powered educational testing system with A grade",
+      date: "2025",
+    },
+    {
+      achievement:
+        "Built lodgeinternet — live platform serving 55+ users across 3 hostels",
+      date: "2026",
+    },
+    {
+      achievement:
+        "Founded Tini Technologies — freelancing brand serving multiple clients",
       date: "2024",
     },
     {
       achievement:
-        "Developed multiple educational technologies during presidency of the departmental association",
-      date: "2023-2024",
-    },
-    {
-      achievement:
-        "Led software development team at Yiniz - Multi-platform web application",
+        "Led software development team at Yiniz — multi-platform web application with ML integration",
       date: "2024",
     },
     {
@@ -301,8 +256,8 @@ export const achievements = {
     },
     {
       achievement:
-        "Led Project at Alusoft Technologies to develop a comprehensive school management system",
-      date: "2023",
+        "Earned AWS Cloud Practitioner certification",
+      date: "2025",
     },
   ],
 };
@@ -318,7 +273,6 @@ import {
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
-import { FaC } from "react-icons/fa6";
 import LinkedInBadge from "@/components/LinkedInBadge";
 
 const Resume = () => {

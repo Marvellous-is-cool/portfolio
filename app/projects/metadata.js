@@ -21,6 +21,6 @@ export const metadata = {
     title: "Projects & Portfolio - Adebayo Inioluwa Marvellous",
     description: "Innovative software projects spanning AI, web, and mobile development",
     type: "website",
-    url: `${siteConfig.url}/work`,
+    url: `${siteConfig.url}/projects`,
   },
 };

@@ -3,7 +3,7 @@ import { siteConfig } from './metadata';
 export default function sitemap() {
   const routes = [
     '',
-    '/work',
+    '/projects',
     '/resume',
     '/services',
     '/contact',

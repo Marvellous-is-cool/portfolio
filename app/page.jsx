@@ -16,15 +16,17 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <article className="text-center xl:text-left order-2 xl:order-none">
-            <p className="text-xl" role="doc-subtitle">Software Developer</p>
+            <p className="text-xl" role="doc-subtitle">Backend Software Engineer</p>
             <h1 className="h1 mb-6">
               Hello I'm
               <br /> <span className="text-accent">Adebayo Inioluwa Marvellous</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80" itemProp="description">
-              Full-stack software developer with 6+ years of experience specializing in AI solutions, 
-              web and mobile development, API integrations, automation, and cloud deployment. 
-              Proficient in React, Next.js, Python, Node.js, TypeScript, Firebase, and modern technologies.
+              Backend-focused software engineer with 6+ years of experience designing, building, 
+              and scaling production-grade systems. Specializing in Python (FastAPI, Django), 
+              distributed architectures, RESTful APIs, payment platforms, AI/NLP integration, 
+              and cloud-native deployment. Also passionate about computational linguistics 
+              and low-resource language AI.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

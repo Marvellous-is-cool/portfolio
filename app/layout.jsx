@@ -52,7 +52,7 @@ export const metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: `${siteConfig.name} - Full Stack Software Developer`,
+        alt: `${siteConfig.name} - Backend Software Engineer & AI/NLP Specialist`,
       },
     ],
   },

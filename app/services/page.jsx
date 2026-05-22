@@ -6,73 +6,31 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "AI Solution Softwares (Web/Mobile)",
+    title: "Backend API Development",
     description:
-      "Step into the future with AI-powered solutions that transform your business! I develop intelligent applications that learn, adapt, and evolve to meet your unique needs. From AI powered websites to predictive analytics, let's harness the power of AI to create software that works smarter, not harder. Ready to revolutionize your workflow? Let's make it happen!",
-    href: "/contact?service=AI Solution Softwares",
+      "I design and build production-grade RESTful APIs and microservices using Python (FastAPI, Django) and Node.js (Express.js). From authentication and rate limiting to database architecture and async task processing, I deliver backend systems that are scalable, secure, and well-documented.",
+    href: "/contact?service=Backend API Development",
   },
   {
     num: "02",
-    title: "Web Development",
+    title: "AI & NLP Systems",
     description:
-      "Why settle for ordinary when you can have extraordinary? I craft websites that don't just look good—they work like magic! From pixel-perfect designs to seamless API integrations and database sorcery, I bring your ideas to life with websites that are as responsive as they are robust. Let’s build you a digital presence that doesn’t just stand out—it steals the show!",
-    href: "/contact?service=Web Development",
+      "Specializing in natural language processing and AI integration — from chatbot APIs and language model pipelines to low-resource language NLP. I build intelligent systems that process, analyze, and generate human language, including custom solutions for African languages.",
+    href: "/contact?service=AI & NLP Systems",
   },
   {
     num: "03",
-    title: "Bots Development/Management",
+    title: "Automation & Bot Development",
     description:
-      "Whether it's smart chatbots, data scrapers, or trading bots, I build powerful, custom bots using JavaScript or Python that work on any platform. Let’s take your efficiency to the next level with automation that never sleeps.",
-    href: "/contact?service=Bots Development/Management",
+      "From WhatsApp/SMS bots and Telegram automation to data scrapers and background job schedulers — I build reliable, event-driven automation systems in Python. Featuring webhook integration, task queuing with Celery, and real-time message processing at scale.",
+    href: "/contact?service=Automation & Bot Development",
   },
   {
     num: "04",
-    title: "Automation / Python Scripting",
+    title: "Cloud Infrastructure & DevOps",
     description:
-      "Embrace the magic of automation with custom Python scripts! I design friendly solutions that simplify your tasks, boost efficiency, and help you overcome challenges effortlessly. Let’s transform those repetitive chores into seamless processes so you can focus on what truly matters!",
-    href: "/contact?service=Automation / Python Scripting",
-  },
-  {
-    num: "05",
-    title: "Mobile App Development",
-    description:
-      "Leverage the power of React to create high-quality, scalable mobile applications tailored to your business needs. I specialize in delivering seamless user experiences and robust functionality across platforms. Let's transform your ideas into a polished app that stands out in today’s competitive market.",
-    href: "/contact?service=Mobile App Development",
-  },
-  {
-    num: "06",
-    title: "API Integration",
-    description:
-      "Streamline your applications and enhance functionality with seamless API integration. I specialize in connecting diverse systems and services to ensure smooth data exchange and improved user experiences. Let me help you harness the full potential of your applications through robust and efficient API solutions.",
-    href: "/contact?service=API Integration",
-  },
-  {
-    num: "07",
-    title: "UI/UX Design",
-    description:
-      "Design that feels as good as it looks! I create intuitive, user-friendly interfaces that make every click a breeze. Let’s turn your vision into a seamless experience that users love!",
-    href: "/contact?service=UI/UX Design",
-  },
-  {
-    num: "08",
-    title: "SEO",
-    description:
-      "Boost your online visibility with data-driven SEO strategies that get results. From keyword research to on-page optimization, I help your website rank higher and attract the right audience. Let’s make sure your site gets the attention it deserves.",
-    href: "/contact?service=SEO",
-  },
-  {
-    num: "09",
-    title: "Graphics Design",
-    description:
-      "Why settle for simple when you can have striking? I create designs that captivate and communicate! From eye-catching visuals to brand-perfect aesthetics, I transform your ideas into compelling designs that resonate. Let’s craft visuals that don’t just tell your story—they make it unforgettable!",
-    href: "/contact?service=Graphics Design",
-  },
-  {
-    num: "10",
-    title: "Presentation Design",
-    description:
-      "Transform your ideas into compelling visual stories with expertly crafted presentations. I design engaging slides that captivate your audience and effectively convey your message. Let’s work together to create a presentation that not only looks great but also leaves a lasting impact.",
-    href: "/contact?service=Presentation Design",
+      "I set up and manage cloud infrastructure on AWS and Docker, implement CI/CD pipelines with GitHub Actions, and deploy applications with confidence. From containerization to production monitoring, I ensure your backend runs reliably at scale.",
+    href: "/contact?service=Cloud Infrastructure & DevOps",
   },
 ];
 
