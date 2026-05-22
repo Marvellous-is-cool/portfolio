@@ -1,21 +1,23 @@
 /**
  * Comprehensive SEO Metadata Configuration
- * for Adebayo Inioluwa Marvellous Portfolio
+ * for Inioluwa Marvellous Adebayo Portfolio
  */
 
 export const siteConfig = {
-  name: "Adebayo Inioluwa Marvellous",
-  title: "Adebayo Inioluwa Marvellous - Backend Software Engineer & AI/NLP Specialist",
-  description: "Adebayo Inioluwa Marvellous is a Nigerian backend software engineer with 6+ years of experience in Python, FastAPI, Django, and Node.js. Specializing in distributed systems, RESTful APIs, payment platforms, AI/NLP integration, and cloud-native deployment. Computational linguist with expertise in low-resource language AI.",
+  name: "Inioluwa Marvellous Adebayo",
+  title:
+    "Inioluwa Marvellous Adebayo - Backend Software Engineer & AI/NLP Specialist",
+  description:
+    "Inioluwa Marvellous Adebayo is a Nigerian backend software engineer with 6+ years of experience in Python, FastAPI, Django, and Node.js. Specializing in distributed systems, RESTful APIs, payment platforms, AI/NLP integration, and cloud-native deployment. Computational linguist with expertise in low-resource language AI.",
   url: "https://marv-port.netlify.app",
   ogImage: "/assets/og-image.jpg",
   keywords: [
     // Personal Brand
-    "Adebayo Inioluwa Marvellous",
+    "Inioluwa Marvellous Adebayo",
     "Marvellous Adebayo",
     "Adebayo Inioluwa",
     "Marvellous Adebayo portfolio",
-    
+
     // Primary Skills
     "Backend Engineer Nigeria",
     "Software Engineer Nigeria",
@@ -23,7 +25,7 @@ export const siteConfig = {
     "FastAPI Developer",
     "AI Solutions Developer",
     "NLP Engineer",
-    
+
     // Technologies
     "Python Developer",
     "FastAPI Developer",
@@ -33,7 +35,7 @@ export const siteConfig = {
     "Redis",
     "Docker",
     "AWS Cloud",
-    
+
     // Specific Services
     "Backend API Development",
     "REST API Design",
@@ -43,20 +45,20 @@ export const siteConfig = {
     "NLP Pipeline Development",
     "WhatsApp API Integration",
     "SMS API Integration",
-    
+
     // Specialized
     "Computational Linguist",
     "Yoruba NLP",
     "Low-Resource Language AI",
     "Machine Learning Engineer",
-    
+
     // Project Types
     "AI-Powered Messaging Platform",
     "Voting System Development",
     "Student Management System",
     "E-commerce Development",
     "Payment Gateway Integration",
-    
+
     // Technologies Stack
     "FastAPI Developer",
     "MongoDB Developer",
@@ -65,13 +67,13 @@ export const siteConfig = {
     "Celery Developer",
     "CI/CD Pipeline",
     "GitHub Actions",
-    
+
     // Locations
     "Software Developer Nigeria",
     "Backend Engineer Lagos",
     "Remote Developer Nigeria",
     "Nigerian Software Engineer",
-    
+
     // Education & Experience
     "Computational Linguistics Graduate",
     "6 Years Programming Experience",
@@ -79,7 +81,7 @@ export const siteConfig = {
     "Mico Technologies",
   ],
   author: {
-    name: "Adebayo Inioluwa Marvellous",
+    name: "Inioluwa Marvellous Adebayo",
     email: "adebayoinioluwamarv@gmail.com",
     phone: "+234 813 373 0145",
     linkedin: "https://www.linkedin.com/in/adebayo-inioluwa-m",
@@ -97,47 +99,56 @@ export const siteConfig = {
   services: [
     {
       name: "AI Solution Softwares",
-      description: "Custom AI-powered web and mobile applications with machine learning capabilities",
+      description:
+        "Custom AI-powered web and mobile applications with machine learning capabilities",
       category: "Artificial Intelligence",
     },
     {
       name: "Web Development",
-      description: "Full-stack web development with React, Next.js, Node.js, and modern frameworks",
+      description:
+        "Full-stack web development with React, Next.js, Node.js, and modern frameworks",
       category: "Web Development",
     },
     {
       name: "Mobile App Development",
-      description: "Cross-platform mobile applications using React Native and Flutter",
+      description:
+        "Cross-platform mobile applications using React Native and Flutter",
       category: "Mobile Development",
     },
     {
       name: "Bot Development",
-      description: "Intelligent chatbots, trading bots, and automation bots in JavaScript and Python",
+      description:
+        "Intelligent chatbots, trading bots, and automation bots in JavaScript and Python",
       category: "Automation",
     },
     {
       name: "API Integration",
-      description: "Seamless integration of third-party APIs and custom API development",
+      description:
+        "Seamless integration of third-party APIs and custom API development",
       category: "Backend Development",
     },
     {
       name: "Python Automation",
-      description: "Custom Python scripts for task automation and data processing",
+      description:
+        "Custom Python scripts for task automation and data processing",
       category: "Automation",
     },
     {
       name: "UI/UX Design",
-      description: "User-centered interface and experience design for web and mobile",
+      description:
+        "User-centered interface and experience design for web and mobile",
       category: "Design",
     },
     {
       name: "SEO Optimization",
-      description: "Data-driven SEO strategies for improved search engine rankings",
+      description:
+        "Data-driven SEO strategies for improved search engine rankings",
       category: "Digital Marketing",
     },
     {
       name: "Graphics Design",
-      description: "Professional graphic design for branding and marketing materials",
+      description:
+        "Professional graphic design for branding and marketing materials",
       category: "Design",
     },
     {
@@ -149,48 +160,91 @@ export const siteConfig = {
   projects: [
     {
       name: "yoobaai",
-      description: "Tone-aware Yoruba NLP toolkit for text preprocessing, tokenization, normalization, and low-resource language AI research",
+      description:
+        "Tone-aware Yoruba NLP toolkit for text preprocessing, tokenization, normalization, and low-resource language AI research",
       url: "https://github.com/Marvellous-is-cool/yoobaai",
       category: "AI/NLP",
-      technologies: ["Python", "NLP", "Computational Linguistics", "Tokenization"],
+      technologies: [
+        "Python",
+        "NLP",
+        "Computational Linguistics",
+        "Tokenization",
+      ],
     },
     {
       name: "Imbyher API",
-      description: "AI-powered messaging backend for WhatsApp and SMS automation with FastAPI, Redis, and Celery",
+      description:
+        "AI-powered messaging backend for WhatsApp and SMS automation with FastAPI, Redis, and Celery",
       url: "https://imbyher.ai",
       category: "Backend/AI",
       technologies: ["FastAPI", "Python", "Redis", "Celery", "WhatsApp API"],
     },
     {
       name: "lodgeinternet",
-      description: "Hostel internet and TV subscription management platform. Live with 55+ users across 3 hostels",
+      description:
+        "Hostel internet and TV subscription management platform. Live with 55+ users across 3 hostels",
       url: "https://lodgeinternet.com",
       category: "Full Stack",
-      technologies: ["Next.js", "TypeScript", "Firebase", "Redis", "Tailwind CSS"],
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Firebase",
+        "Redis",
+        "Tailwind CSS",
+      ],
     },
     {
       name: "Yiniz + YinizAI",
-      description: "Multi-purpose platform with integrated ML microservice for question difficulty prediction and answer scoring",
+      description:
+        "Multi-purpose platform with integrated ML microservice for question difficulty prediction and answer scoring",
       url: "https://yiniz.com",
       category: "Full Stack + ML",
-      technologies: ["Node.js", "Express.js", "MySQL", "FastAPI", "Python", "Scikit-learn"],
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "FastAPI",
+        "Python",
+        "Scikit-learn",
+      ],
     },
     {
       name: "transdom",
-      description: "Full-stack logistics platform with FastAPI backend and Next.js frontend for shipping rates and pricing",
+      description:
+        "Full-stack logistics platform with FastAPI backend and Next.js frontend for shipping rates and pricing",
       url: "https://transdomlogistics.com",
       category: "Full Stack",
-      technologies: ["FastAPI", "Next.js", "TypeScript", "MongoDB", "Auth", "REST API"],
+      technologies: [
+        "FastAPI",
+        "Next.js",
+        "TypeScript",
+        "MongoDB",
+        "Auth",
+        "REST API",
+      ],
     },
   ],
   skills: {
     languages: ["Python", "JavaScript", "TypeScript", "R", "Rust"],
-    backend: ["FastAPI", "Django", "Express.js", "Node.js", "REST APIs", "GraphQL"],
+    backend: [
+      "FastAPI",
+      "Django",
+      "Express.js",
+      "Node.js",
+      "REST APIs",
+      "GraphQL",
+    ],
     databases: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase"],
     cloud: ["AWS", "Docker", "CI/CD", "GitHub Actions", "Linux"],
     payments: ["Stripe", "Paystack", "PayPal", "Webhooks"],
     async: ["Celery", "Redis", "Background Workers", "Task Scheduling"],
-    ai: ["NLP", "Computational Linguistics", "Machine Learning", "Scikit-learn", "LangChain"],
+    ai: [
+      "NLP",
+      "Computational Linguistics",
+      "Machine Learning",
+      "Scikit-learn",
+      "LangChain",
+    ],
     testing: ["Pytest", "TDD", "Integration Testing"],
     tools: ["Git", "Docker", "VS Code", "Postman"],
   },
@@ -203,9 +257,10 @@ export const siteConfig = {
 export const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Adebayo Inioluwa Marvellous",
+  name: "Inioluwa Marvellous Adebayo",
   alternateName: "Marvellous Adebayo",
-  description: "Backend software engineer and AI/NLP specialist with 6+ years of experience",
+  description:
+    "Backend software engineer and AI/NLP specialist with 6+ years of experience",
   url: siteConfig.url,
   image: `${siteConfig.url}/assets/photo.png`,
   email: "adebayoinioluwamarv@gmail.com",
@@ -256,7 +311,7 @@ export const personSchema = {
 export const professionalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "Adebayo Inioluwa Marvellous - Software Development Services",
+  name: "Inioluwa Marvellous Adebayo - Software Development Services",
   description: siteConfig.description,
   url: siteConfig.url,
   logo: `${siteConfig.url}/assets/photo.png`,
@@ -326,11 +381,12 @@ export const organizationSchema = {
   name: "Tini Technologies",
   founder: {
     "@type": "Person",
-    name: "Adebayo Inioluwa Marvellous",
+    name: "Inioluwa Marvellous Adebayo",
   },
   url: siteConfig.url,
   logo: `${siteConfig.url}/assets/photo.png`,
-  description: "Software development and technology solutions company founded by Adebayo Inioluwa Marvellous",
+  description:
+    "Software development and technology solutions company founded by Inioluwa Marvellous Adebayo",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lagos",

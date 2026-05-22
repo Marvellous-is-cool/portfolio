@@ -11,45 +11,52 @@ import { generateCvPdf } from "@/lib/generateCV";
 
 const Home = () => {
   return (
-    <main className="h-full">
-      <section className="container mx-auto h-full" aria-label="Introduction">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+    <main className='h-full'>
+      <section className='container mx-auto h-full' aria-label='Introduction'>
+        <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24'>
           {/* text */}
-          <article className="text-center xl:text-left order-2 xl:order-none">
-            <p className="text-xl" role="doc-subtitle">Backend Software Engineer</p>
-            <h1 className="h1 mb-6">
+          <article className='text-center xl:text-left order-2 xl:order-none'>
+            <p className='text-xl' role='doc-subtitle'>
+              Backend Software Engineer
+            </p>
+            <h1 className='h1 mb-6'>
               Hello I'm
-              <br /> <span className="text-accent">Adebayo Inioluwa Marvellous</span>
+              <br />{" "}
+              <span className='text-accent'>Inioluwa Marvellous Adebayo</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80" itemProp="description">
-              Backend-focused software engineer with 6+ years of experience designing, building, 
-              and scaling production-grade systems. Specializing in Python (FastAPI, Django), 
-              distributed architectures, RESTful APIs, payment platforms, AI/NLP integration, 
-              and cloud-native deployment. Also passionate about computational linguistics 
-              and low-resource language AI.
+            <p
+              className='max-w-[500px] mb-9 text-white/80'
+              itemProp='description'>
+              Backend-focused software engineer with 6+ years of experience
+              designing, building, and scaling production-grade systems.
+              Specializing in Python (FastAPI, Django), distributed
+              architectures, RESTful APIs, payment platforms, AI/NLP
+              integration, and cloud-native deployment. Also passionate about
+              computational linguistics and low-resource language AI.
             </p>
             {/* btn and socials */}
-            <div className="flex flex-col xl:flex-row items-center gap-8">
+            <div className='flex flex-col xl:flex-row items-center gap-8'>
               <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
+                variant='outline'
+                size='lg'
+                className='uppercase flex items-center gap-2'
                 onClick={generateCvPdf}
-                aria-label="Download CV"
-              >
+                aria-label='Download CV'>
                 <span>Download CV</span>
-                <RiFileDownloadLine className="text-xl" aria-hidden="true" />
+                <RiFileDownloadLine className='text-xl' aria-hidden='true' />
               </Button>
-              <div className="mb-8 xl:mb-0">
+              <div className='mb-8 xl:mb-0'>
                 <Social
-                  containerStyles="flex gap-8"
-                  iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                  containerStyles='flex gap-8'
+                  iconStyles='w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500'
                 />
               </div>
             </div>
           </article>
           {/* photo */}
-          <aside className="order-1 xl:order-none mb-8 xl:mb-0" aria-label="Profile photo">
+          <aside
+            className='order-1 xl:order-none mb-8 xl:mb-0'
+            aria-label='Profile photo'>
             <Photo />
           </aside>
         </div>

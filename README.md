@@ -1,4 +1,4 @@
-# 🚀 Adebayo Inioluwa Marvellous - Portfolio
+# 🚀 Inioluwa Marvellous Adebayo - Portfolio
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.2-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://reactjs.org/)
@@ -9,7 +9,7 @@
 
 ## 🌟 Live Demo
 
-**[View Live Portfolio →](#)** *(Update with your deployed URL)*
+**[View Live Portfolio →](#)** _(Update with your deployed URL)_
 
 ---
 
@@ -122,13 +122,16 @@ portfolio/
 ## 🎯 Portfolio Sections
 
 ### 🏠 Home
+
 - Professional introduction
 - Downloadable CV
 - Social media links
 - Key statistics (Years of experience, Projects completed, Technologies, etc.)
 
 ### 💼 Work/Projects
+
 Interactive showcase of my projects including:
+
 - **Imbyher.ai** - AI-powered messaging platform
 - **Fyblincssa** - Student management system with ID generation
 - **ASF Votes** - Full-stack voting system
@@ -138,14 +141,18 @@ Interactive showcase of my projects including:
 - And more...
 
 ### 📄 Resume
+
 Comprehensive professional background:
+
 - Work experience (Mico Technologies, Tini Technologies)
 - Education
 - Skills & technologies
 - Languages spoken
 
 ### 🎨 Services
+
 Professional services offered:
+
 1. AI Solution Development
 2. Web Development
 3. Mobile App Development
@@ -158,7 +165,9 @@ Professional services offered:
 10. Presentation Design
 
 ### 📧 Contact
+
 Working contact form with:
+
 - Email integration
 - Service selection
 - Form validation
@@ -176,12 +185,14 @@ Working contact form with:
 ### Installation
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/Marvellous-is-cool/portfolio.git
 cd portfolio
 ```
 
 2. **Install dependencies**
+
 ```bash
 npm install
 # or
@@ -191,11 +202,13 @@ pnpm install
 ```
 
 3. **Set up environment variables**
+
 ```bash
 cp .env.example .env.local
 ```
 
 Edit `.env.local` and add your configuration:
+
 ```env
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 NEXT_PUBLIC_SITE_URL=https://yourdomain.com
@@ -203,6 +216,7 @@ NEXT_PUBLIC_CONTACT_EMAIL=your@email.com
 ```
 
 4. **Run the development server**
+
 ```bash
 npm run dev
 # or
@@ -284,6 +298,7 @@ This portfolio includes **ENTERPRISE-LEVEL SEO**:
 - ✅ Security headers
 
 **For complete SEO documentation, see:**
+
 - `SEO_GUIDE.md` - Comprehensive guide
 - `SEO_IMPLEMENTATION.md` - Quick reference
 - `SEO_COMPLETE.md` - Implementation summary
@@ -314,6 +329,7 @@ This portfolio includes **ENTERPRISE-LEVEL SEO**:
 ### Other Platforms
 
 This Next.js app can be deployed to:
+
 - **AWS Amplify**
 - **Google Cloud Platform**
 - **DigitalOcean App Platform**
@@ -346,7 +362,7 @@ Contributions are welcome! If you have suggestions or improvements:
 
 ## 📧 Contact
 
-**Adebayo Inioluwa Marvellous**
+**Inioluwa Marvellous Adebayo**
 
 - 📧 Email: adebayoinioluwamarvellous1@gmail.com
 - 💼 LinkedIn: [linkedin.com/in/adebayo-inioluwa-m](https://www.linkedin.com/in/adebayo-inioluwa-m)
@@ -386,9 +402,9 @@ If you found this portfolio interesting or helpful, please consider:
 
 <div align="center">
 
-**Built with ❤️ by Adebayo Inioluwa Marvellous**
+**Built with ❤️ by Inioluwa Marvellous Adebayo**
 
-*Full-Stack Software Developer | AI Solutions Expert | 6+ Years Experience*
+_Full-Stack Software Developer | AI Solutions Expert | 6+ Years Experience_
 
 **Available for Freelance Projects & Collaborations**
 

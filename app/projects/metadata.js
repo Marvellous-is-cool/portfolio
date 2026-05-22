@@ -1,9 +1,10 @@
 // Server-side metadata for Work page
-import { siteConfig } from '../metadata';
+import { siteConfig } from "../metadata";
 
 export const metadata = {
-  title: "Projects & Portfolio - Adebayo Inioluwa Marvellous",
-  description: "Explore the software development projects of Adebayo Inioluwa Marvellous including AI-powered applications, full-stack web solutions, mobile apps, and innovative digital experiences. View live projects in React, Next.js, Python, Firebase, and more.",
+  title: "Projects & Portfolio - Inioluwa Marvellous Adebayo",
+  description:
+    "Explore the software development projects of Inioluwa Marvellous Adebayo including AI-powered applications, full-stack web solutions, mobile apps, and innovative digital experiences. View live projects in React, Next.js, Python, Firebase, and more.",
   keywords: [
     ...siteConfig.keywords,
     "software projects Nigeria",
@@ -18,8 +19,9 @@ export const metadata = {
     "Nigerian developer portfolio",
   ],
   openGraph: {
-    title: "Projects & Portfolio - Adebayo Inioluwa Marvellous",
-    description: "Innovative software projects spanning AI, web, and mobile development",
+    title: "Projects & Portfolio - Inioluwa Marvellous Adebayo",
+    description:
+      "Innovative software projects spanning AI, web, and mobile development",
     type: "website",
     url: `${siteConfig.url}/projects`,
   },

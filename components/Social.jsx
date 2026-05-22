@@ -22,7 +22,7 @@ const Social = ({ containerStyles, iconStyles }) => {
     // Load LinkedIn badge script
     if (
       !document.querySelector(
-        'script[src="https://platform.linkedin.com/badges/js/profile.js"]'
+        'script[src="https://platform.linkedin.com/badges/js/profile.js"]',
       )
     ) {
       const script = document.createElement("script");
@@ -43,9 +43,9 @@ const Social = ({ containerStyles, iconStyles }) => {
         const isLinkedIn = item.path.includes("linkedin");
 
         return (
-          <div key={index} className="relative">
+          <div key={index} className='relative'>
             <Link
-              target="_blank"
+              target='_blank'
               href={item.path}
               className={iconStyles}
               onMouseEnter={() => {
@@ -57,34 +57,31 @@ const Social = ({ containerStyles, iconStyles }) => {
                 if (isLinkedIn) {
                   setShowLinkedInBadge(false);
                 }
-              }}
-            >
+              }}>
               {item.icon}
             </Link>
 
             {/* LinkedIn Badge Popup */}
             {isLinkedIn && showLinkedInBadge && (
-              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 z-50 bg-white rounded-lg shadow-2xl p-4 border border-gray-200 min-w-[280px]">
+              <div className='absolute top-full left-1/2 transform -translate-x-1/2 mt-2 z-50 bg-white rounded-lg shadow-2xl p-4 border border-gray-200 min-w-[280px]'>
                 <div
-                  className="badge-base LI-profile-badge"
-                  data-locale="en_US"
-                  data-size="medium"
-                  data-theme="dark"
-                  data-type="VERTICAL"
-                  data-vanity="adebayo-inioluwa-m"
-                  data-version="v1"
-                >
+                  className='badge-base LI-profile-badge'
+                  data-locale='en_US'
+                  data-size='medium'
+                  data-theme='dark'
+                  data-type='VERTICAL'
+                  data-vanity='adebayo-inioluwa-m'
+                  data-version='v1'>
                   <a
-                    className="badge-base__link LI-simple-link"
-                    href="https://ng.linkedin.com/in/adebayo-inioluwa-m?trk=profile-badge"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Adebayo Inioluwa Marvellous
+                    className='badge-base__link LI-simple-link'
+                    href='https://ng.linkedin.com/in/adebayo-inioluwa-m?trk=profile-badge'
+                    target='_blank'
+                    rel='noopener noreferrer'>
+                    Inioluwa Marvellous Adebayo
                   </a>
                 </div>
                 {/* Arrow pointer */}
-                <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-gray-200 rotate-45"></div>
+                <div className='absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-gray-200 rotate-45'></div>
               </div>
             )}
           </div>

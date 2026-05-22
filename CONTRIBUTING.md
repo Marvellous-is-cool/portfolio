@@ -7,6 +7,7 @@ First off, thank you for considering contributing to this project! 🎉
 ### Reporting Bugs 🐛
 
 If you find a bug, please create an issue with:
+
 - A clear title and description
 - Steps to reproduce the issue
 - Expected vs actual behavior
@@ -16,6 +17,7 @@ If you find a bug, please create an issue with:
 ### Suggesting Enhancements 💡
 
 Feature requests are welcome! Please include:
+
 - Clear use case
 - Expected behavior
 - Why this would be useful
@@ -25,6 +27,7 @@ Feature requests are welcome! Please include:
 
 1. **Fork the repository**
 2. **Create a feature branch**
+
    ```bash
    git checkout -b feature/AmazingFeature
    ```
@@ -35,11 +38,13 @@ Feature requests are welcome! Please include:
    - Test your changes
 
 4. **Commit your changes**
+
    ```bash
    git commit -m 'Add some AmazingFeature'
    ```
 
 5. **Push to your fork**
+
    ```bash
    git push origin feature/AmazingFeature
    ```
@@ -60,6 +65,7 @@ Feature requests are welcome! Please include:
 ## 🧪 Testing
 
 Before submitting:
+
 - Test locally with `npm run dev`
 - Build successfully with `npm run build`
 - Check for lint errors with `npm run lint`
@@ -68,6 +74,7 @@ Before submitting:
 ## 📋 Commit Messages
 
 Use clear, descriptive commit messages:
+
 - `feat: Add new project to portfolio`
 - `fix: Correct contact form validation`
 - `docs: Update README with new section`
@@ -77,8 +84,9 @@ Use clear, descriptive commit messages:
 ## ❓ Questions?
 
 Feel free to reach out:
+
 - Email: adebayoinioluwamarvellous1@gmail.com
-- LinkedIn: [Adebayo Inioluwa Marvellous](https://www.linkedin.com/in/adebayo-inioluwa-m)
+- LinkedIn: [Inioluwa Marvellous Adebayo](https://www.linkedin.com/in/adebayo-inioluwa-m)
 
 ## 📄 License
 

@@ -16,7 +16,7 @@ const LinkedInBadge = ({
     // Load LinkedIn badge script if not already loaded
     if (
       !document.querySelector(
-        'script[src="https://platform.linkedin.com/badges/js/profile.js"]'
+        'script[src="https://platform.linkedin.com/badges/js/profile.js"]',
       )
     ) {
       const script = document.createElement("script");
@@ -39,21 +39,19 @@ const LinkedInBadge = ({
         </div>
       )}
       <div
-        className="badge-base LI-profile-badge"
-        data-locale="en_US"
+        className='badge-base LI-profile-badge'
+        data-locale='en_US'
         data-size={size}
         data-theme={theme}
-        data-type="VERTICAL"
-        data-vanity="adebayo-inioluwa-m"
-        data-version="v1"
-      >
+        data-type='VERTICAL'
+        data-vanity='adebayo-inioluwa-m'
+        data-version='v1'>
         <a
-          className="badge-base__link LI-simple-link"
-          href="https://ng.linkedin.com/in/adebayo-inioluwa-m?trk=profile-badge"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Adebayo Inioluwa Marvellous
+          className='badge-base__link LI-simple-link'
+          href='https://ng.linkedin.com/in/adebayo-inioluwa-m?trk=profile-badge'
+          target='_blank'
+          rel='noopener noreferrer'>
+          Inioluwa Marvellous Adebayo
         </a>
       </div>
     </div>
