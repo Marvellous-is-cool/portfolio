@@ -81,8 +81,8 @@ export const experience = {
   items: [
     {
       company: "Mico Technologies",
-      position: "Intern - Software Developer",
-      duration: "2025 - Present",
+      position: "Software Developer",
+      duration: "2025",
     },
     {
       company: "Tini Technologies (freelancing brand)",
