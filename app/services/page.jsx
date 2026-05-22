@@ -23,7 +23,7 @@ const services = [
     title: "Automation & Bot Development",
     description:
       "From WhatsApp/SMS bots and Telegram automation to data scrapers and background job schedulers — I build reliable, event-driven automation systems in Python. Featuring webhook integration, task queuing with Celery, and real-time message processing at scale.",
-    href: "/contact?service=Automation & Bot Development",
+    href: "https://tinibots.vercel.app/",
   },
   {
     num: "04",

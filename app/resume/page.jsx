@@ -81,7 +81,7 @@ export const experience = {
   items: [
     {
       company: "Mico Technologies",
-      position: "Software Developer",
+      position: "Senior Backend Engineer",
       duration: "2025",
     },
     {

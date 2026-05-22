@@ -36,7 +36,7 @@ export const projects = [
     ],
     image: "/assets/work/yoobaai.jpg",
     hasVideo: false,
-    live: "https://github.com/Marvellous-is-cool/yoobaai",
+    live: "https://yooba-web.vercel.app/",
     github: "https://github.com/Marvellous-is-cool/yoobaai",
   },
   {
